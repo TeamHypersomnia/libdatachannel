@@ -61,6 +61,7 @@ private:
 	// This prevents the ICE->DTLS and DTLS->SCTP races where one side
 	// sends its first packet before the other side has called registerIncoming().
 	std::mutex mPendingMutex;
+	bool mHasRecvCallback = false;
 	std::vector<message_ptr> mPendingRecv;
 };
 
