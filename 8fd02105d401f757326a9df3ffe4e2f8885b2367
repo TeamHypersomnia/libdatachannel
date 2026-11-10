@@ -1,0 +1,1 @@
+Audited: audit #1, 2026-11-09 - recv/onRecv lock order fix: correct, removes the hang seen on [PL]; mPendingMutex is a leaf lock now
